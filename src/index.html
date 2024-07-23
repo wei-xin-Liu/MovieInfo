@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個別電影資訊</title>
+  
+  <link href="./output.css" rel="stylesheet">
+  <script src="./movieinfo.js"></script>
+  
+</head>
+
+<body class="bg-zinc-400 font-sans m-[2%]">
+  <!-- 電影資訊欄 圖片 電影相關資訊 -->
+  <div class="grid grid-flow-row sm:grid-cols-[15%_85%]">
+    <div class="rounded-b">
+      <img src="../images/eb25b0964b1d654ffe0395191ffbc7bd.jpg" alt="">
+    </div>
+
+    <div class="ml-[2%] mt-[2%] sm:mt-[0%]">
+
+      <div>死侍與金鋼狼</div>
+      <div>DEADPOOL & WOLVERINE</div>
+
+      <div class="grid grid-cols-[20%_80%] sm:grid-cols-[5%_95%] gap-[1%] mt-[2%]">
+        <div>級別</div>
+
+        <div><img class="w-[10%] sm:w-[3%]" src="../images/ic_rating_pg15.png"></div>
+
+        <div>片長</div>
+
+        <div>127分</div>
+
+        <div>上映日</div>
+
+        <div>2024/07/24</div>
+
+        <div>類型</div>
+
+        <div>動作</div>
+
+        <div>演員</div>
+
+        <div>萊恩·雷諾斯，休·傑克曼，艾瑪·可林，莫蓮娜·芭卡琳，羅伯·德萊尼，萊斯莉·奧加姆斯，卡蘭·索尼，馬修·麥特費狄恩</div>
+
+        <div>導演</div>
+
+        <div>薛恩·李維</div>
+
+        <div>簡介</div>
+
+        <div>
+
+          <p id="movieText" class="mr-[5%]">
+            本片是《死侍》系列加入漫威電影宇宙的第一炮，並象徵X戰警正式「回歸」漫威懷抱，死侍與金鋼狼再續睽別15年兄弟情，也被《洛基》影集中的時間變異管理局抓入，一如以往惡搞，他依然嘴賤嗆說漫威救世主非他莫屬，勢在改寫漫威電影宇宙。
+            史上最另類超級英雄、語不驚人死不休的死侍睽違六年終於萬眾矚目重返大銀幕，更首度加入漫威電影宇宙！除了與老搭檔鋼人、青少女彈頭和雪緒再度聚首，更將與睽別15年的金鋼狼二度並肩作戰再續兄弟情，時間變異管理局找上門帶走他也老神在在，並自認只有自己能當漫威救世主，改寫漫威電影宇宙。
+          </p>
+          
+          <button id="btnmovieText" class="w-[20%] sm:w-[5%] border-2 border-indigo-500 hover:bg-indigo-500 mb-[10%] sm:mb-[0%]">更多...</button>
+          
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 電影預告 -->
+  <div class="grid grid-flow-row gap-[2%] mt-[2%]">
+    <div>電影預告</div>
+    <div class="bg-black">
+      <iframe class="ml-[10%] mr-[10%] w-[80%] h-[200px] sm:h-[800px]"
+        src="https://www.youtube.com/embed/O4PlaF13SH4?rel=0"></iframe>
+    </div>
+  </div>
+
+
+  <!-- 線上訂票 -->
+  <div class="mt-[7%] sm:mt-[2%]">線上訂票</div>
+
+  <div id="chooseticket" class="flex mt-[2%] ml-[5%] ">
+    <button class="w-[15%] sm:w-[7%] choosedate">
+      <p>7/24</p>
+      <p>周三</p>
+    </button>
+
+    <button class="w-[15%] sm:w-[7%]">
+      <p>7/25</p>
+      <p>周四</p>
+    </button>
+
+    <button class="w-[15%] sm:w-[7%]">
+      <p>7/26</p>
+      <p>周五</p>
+    </button>
+
+    <button class="w-[15%] sm:w-[7%]">
+      <p>7/27</p>
+      <p>周六</p>
+    </button>
+
+    <button class="w-[15%] sm:w-[7%]">
+      <p>7/28</p>
+      <p>周日</p>
+    </button>
+  </div>
+
+  <div class="grid grid-cols-[20%_20%_60%] sm:grid-cols-[8%_8%_70%] mt-[2%] ml-[5%]">
+    <div class="content-center">
+      <p class="text-center">丹普廳</p>
+    </div>
+
+    <div class="content-center">
+      <p class=" text-center">2D英語</p>
+    </div>
+
+    <div class="ml-[2%]">
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">13:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">14:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">14:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">14:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">14:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">14:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">15:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">16:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+      <button
+        class="w-[30%] sm:w-[10%] text-center mr-[1.1%] mb-[1.1%] border-2 border-indigo-500 hover:scale-[1.1] hover:bg-indigo-500">17:20</button>
+
+    </div>
+
+  </div>
+  
+
+</body>
+
+</html>

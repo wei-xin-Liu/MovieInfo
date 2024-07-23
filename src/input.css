@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    #movieText {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* 設置顯示的行數 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #movieText.expanded {
+        display: block;
+        -webkit-line-clamp: unset;
+    }
+
+    .choosedate {
+        border-bottom-width: 4px;
+        border-color: indigo;
+    }
+}
